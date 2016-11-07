@@ -1,0 +1,97 @@
+@font-face {
+  font-family: Tahoma;
+  src: url('fonts/Tahoma.ttf');
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: Tahoma;
+  text-align: justify;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 0.8em;
+  padding-bottom: 1.6em;
+  font-size: 175%;
+}
+
+h2 {
+  border: 1px solid #000;
+  float: right;
+  position: relative;
+  top: -1px;
+  right: -1px;
+  text-align: center;
+  width: 120px;
+  font-size: 125%;
+}
+
+.chk {
+  background-color: #d59898;
+}
+
+.bef {
+  color: #fff;
+  background-color: #c14543;
+}
+
+.ssi {
+  background-color: #e5d198;
+}
+
+p {
+  padding: 10px;
+  clear: both;
+}
+
+section {
+  border: 1px solid #000;
+  background-color: #999;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  height: 100%;
+}
+
+
+/***********************************************
+******************** mobile ********************
+***********************************************/
+
+@media (max-width: 767px) {
+  section {
+    clear: both;
+    width: calc(100% - 40px);
+  }
+}
+
+
+/***********************************************
+******************** tablet ********************
+***********************************************/
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #chk,
+  #bef {
+    float: left;
+    width: calc(50% - 30px);
+  }
+  #ssi {
+    clear: both;
+    width: calc(100% - 40px);
+  }
+}
+
+
+/***********************************************
+******************* desktop ********************
+***********************************************/
+
+@media (min-width: 992px) {
+  section {
+    width: calc(33.33% - 26.67px);
+    float: left;
+  }
+}
